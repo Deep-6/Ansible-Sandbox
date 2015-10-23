@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+
+
+  tasks: 
+  - name: install scapy
+    apt: name=python-scapy state=installed
+    sudo: True
+    sudo_user: root
+
